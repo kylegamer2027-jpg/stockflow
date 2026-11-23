@@ -2,7 +2,7 @@
 require_once __DIR__ . '/../includes/functions.php';
 
 if (current_user()) {
-    redirect('modules/products/index.php');
+    redirect('modules/dashboard/index.php');
 }
 
 $error = flash('error');
@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         session_regenerate_id(true);
         unset($user['password']);
         $_SESSION['user'] = $user;
-        redirect('modules/products/index.php');
+        redirect('modules/dashboard/index.php');
     } catch (InvalidArgumentException $exception) {
         $error = $exception->getMessage();
     }

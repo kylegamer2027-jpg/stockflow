@@ -12,4 +12,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     header('Location: ' . url('auth/login.php'));
     exit;
 }
-redirect(current_user() ? 'modules/products/index.php' : 'auth/login.php');
+redirect(current_user() ? 'modules/dashboard/index.php' : 'auth/login.php');

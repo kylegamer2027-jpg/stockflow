@@ -2,7 +2,7 @@
 require_once __DIR__ . '/../includes/functions.php';
 
 if (current_user()) {
-    redirect('modules/products/index.php');
+    redirect('modules/dashboard/index.php');
 }
 
 $error = null;

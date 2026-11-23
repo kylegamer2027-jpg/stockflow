@@ -1,13 +1,14 @@
 <?php
 $currentPath = str_replace('\\', '/', $_SERVER['SCRIPT_NAME'] ?? '');
 $navigation = [
+    ['Dashboard', 'modules/dashboard/index.php', '⌂'],
     ['Products', 'modules/products/index.php', '▦'],
     ['Categories', 'modules/categories/index.php', '◈'],
     ['Suppliers', 'modules/suppliers/index.php', '♧'],
 ];
 ?>
 <aside class="sidebar">
-    <a class="brand" href="<?= e(url('modules/products/index.php')) ?>">
+    <a class="brand" href="<?= e(url('modules/dashboard/index.php')) ?>">
         <span class="brand-mark">C</span><span>stock<span class="brand-light">flow</span><small>CRUD WORKSPACE</small></span>
     </a>
     <span class="nav-caption">WORKSPACE</span>
