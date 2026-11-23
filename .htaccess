@@ -1,0 +1,5 @@
+Options -Indexes
+ServerSignature Off
+<FilesMatch "^(stockflow\.sql|database\.php)$">
+    Require all denied
+</FilesMatch>
